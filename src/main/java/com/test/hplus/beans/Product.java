@@ -1,5 +1,7 @@
 package com.test.hplus.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -10,6 +12,10 @@ public class Product {
     private int id;
     private String name;
     private String imagePath;
+
+
+    public Product() {
+    }
 
     public int getId() {
         return id;
@@ -35,6 +41,5 @@ public class Product {
         this.imagePath = imagePath;
     }
 
-    public Product() {
-    }
+
 }
